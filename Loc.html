@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máy tính tuổi</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <h1>Máy tính tuổi thông minh</h1>
+      <div>Nhập tuổi của bạn:</div>
+      <br />
+      <input type="text" name="" id="tuoi" />
+      <div id="kq"></div>
+      <br />
+      <input
+        type="button"
+        value="Tính tuổi của bạn"
+        onclick="return tinhAge()"
+      />
+    </form>
+    <script>
+      function tinhAge() {
+        var currentAge = document.getElementById("tuoi").value;
+        document.getElementById("kq").innerHTML =
+          "Chào bạn Bùi Phước Lộc. Bạn đã " + currentAge + "tuổi rồi!";
+      }
+    </script>
+  </body>
+</html>
