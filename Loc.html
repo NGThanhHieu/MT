@@ -4,13 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Máy tính tuổi</title>
+    <style>
+      @keyframes textPulse {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.05);
+          font-size: large;
+        }
+      }
+      body {
+        background-image: url(./red-hearts-background-72ezg3dinb1cgekl.webp);
+        text-align: center;
+      }
+      #kq {
+        color: rgb(255, 141, 160);
+        animation: textPulse 1.5s infinite alternate;
+      }
+    </style>
   </head>
   <body>
     <form action="" method="post">
       <h1>Máy tính tuổi thông minh</h1>
       <div>Nhập tuổi của bạn:</div>
       <br />
-      <input type="text" name="" id="tuoi" />
+      <input type="text" name="" id="tuoi" /> <br />
       <div id="kq"></div>
       <br />
       <input
@@ -23,7 +42,7 @@
       function tinhAge() {
         var currentAge = document.getElementById("tuoi").value;
         document.getElementById("kq").innerHTML =
-          "Chào bạn Bùi Phước Lộc. Bạn đã " + currentAge + "tuổi rồi!";
+          "Chào bạn Huỳnh Thị Cẩm My. Bạn đã " + currentAge + " tuổi rồi!";
       }
     </script>
   </body>
